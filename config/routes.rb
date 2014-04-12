@@ -1,4 +1,5 @@
 Treebook::Application.routes.draw do
+  devise_for :users
   resources :statuses
 
   # Makeing root of applicaiton list of statuses
