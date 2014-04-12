@@ -1,6 +1,10 @@
 Treebook::Application.routes.draw do
   resources :statuses
 
+  # Makeing root of applicaiton list of statuses
+
+  root to: 'statuses#index' #NOTE: to the left of the '#' is the controller (statuses), and to the right is the action (index)
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
